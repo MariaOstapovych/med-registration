@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+    
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Ваш акаунт у med</h1>
+                <button type="submit" class="button primary" data-modal-open>Реєстрація</button>
+            </div>
+        </section>
+
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+                
+            <div class="modal-header">
+                <button type="button" class="button-svg" data-modal-close>
+                    <svg>
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+
+
+               
+            <div class="image">
+                <img src="./images/profile1.jpg" alt="profile">
+            </div>
+
+
+            <form class="form">
+                <div class="input">
+                    <div class="input-information">
+                        <label for="username">Username</label>
+                        <input type="username" id="username" name="username" required placeholder="Enter Username" class="enter">
+                    </div>
+            
+                    <div class="input-information">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="Enter Password" class="enter">
+                    </div>
+                </div>
+            
+                <div class="login">
+                    <button type="submit" class="button login">Login</button>
+                    <div class="login-remember">
+                        <input type="checkbox" value="lsRememberMe" id="rememberMe">
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                </div>
+            
+                <div class="cancel">
+                    <button type="reset" class="button cancel">Cancel</button>
+                    <a href="https://cutt.ly/KfkxSnd" target="_blank">Forgot password?</a>
+                </div>
+            </form>
+                
+            
+               
+        </div>
+    </div>
+
+
+
+    <footer>
+        <!-- <p>You can use <b><span title="Cascading Style Sheets">CSS</span></b> to style your <b><span title="Hyper Text Markup Language">HTML</span></b></p> -->
+    </footer>
+    
+    <script src="./js/modal.js"></script>
+</body>
+</html>
